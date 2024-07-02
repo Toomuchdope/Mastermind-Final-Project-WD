@@ -56,7 +56,7 @@ header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                gap: 3rem;
+                gap: 2rem;
                 list-style: none;
                 padding: 0;
                 margin: 0;
@@ -130,7 +130,7 @@ header {
         position: relative;
         z-index: 1;
         text-align: center;
-        color: white;
+        color: var(--clr-secondary);
         animation: 4s anim-lineUp ease-out;
 
         &>h1 {
