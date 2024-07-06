@@ -9,14 +9,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scrollbar-width: none;
+    /* scrollbar-width: none;
     -ms-overflow-style: none;
 
     ::-webkit-scrollbar {
         display: none;
         width: 0;
         height: 0;
-    }
+    } */
 }
 
 body {
@@ -43,7 +43,7 @@ header {
         &>.header-logo {
             &>a {
                 &>img {
-                    width: 10vw;
+                    width: 12vw;
                     margin: 1rem;
                     padding-left: 15px;
                     cursor: pointer;
@@ -151,7 +151,12 @@ header {
     }
 }
 
-
+.main-container {
+    background-color: var(--clr-secondary);
+    height: 100vh;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
 footer {
     background-color: var(--clr-primary);
