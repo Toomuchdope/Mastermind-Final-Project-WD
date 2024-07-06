@@ -10,11 +10,13 @@
       description="This website is for educational purposes only. The website is the final project of Mastermind by TW02 from FEU Tech."
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+    <script src="./assets/js/main.js"></script>
     <title>But First, Coffee | Best Coffee Franchise in the Philippines</title>
   </head>
   <body>
@@ -26,6 +28,9 @@
           /></a>
         </div>
         <nav class="nav-container">
+          <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
           <ul class="nav-menu">
             <li>
               <a href="./index.html" target="_blank" rel="noopener noreferrer"
@@ -57,10 +62,12 @@
               >
             </li>
             <li>
-              <a href="" target="_blank" rel="noopener noreferrer"></a
-              ><button>Login</button>
+              <button>Login</button>
             </li>
           </ul>
+          <div class="nav-close">
+            <i class='bx bx-x'></i>
+          </div>
         </nav>
       </div>
     </header>
@@ -77,8 +84,35 @@
           </h6>
         </div>
       </section>
-      <section class="main-container">
-        <div></div>
+        <section class="feature-container">
+          <div class="feature-card">
+            <i class='bx bxs-coffee-bean'></i>
+            <h3>Quality Coffee</h3>
+            <p>
+              Savor Filipino coffee with our premium Barako and Arabica beans. Expertly crafted for a taste that rivals the best.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class='bx bxs-wallet' ></i>
+            <h3>Affordable Price</h3>
+            <p>
+              Enjoy top-notch coffee and pastries from P55 to P460. High-quality, affordable indulgence for everyone.
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class='bx bxs-cog' ></i>
+            <h3>Franchise Support</h3>
+            <p>
+              Join 150+ branches nationwide with our robust franchise support and modern marketing. Serve the best, anytime, anywhere.
+            </p>
+          </div>
+        </section>
+        <section class="brand-container">
+          <div>
+            <h3>Because good coffee doesn't have to be expensive.</h3>
+            <h1>We are But First, Coffee</h1>
+          </div>
+        </section>
       </section>
     </main>
     <footer>
@@ -88,7 +122,7 @@
             <h4>Company</h4>
             <ul>
               <li>
-                <a href="#" target="_blank" rel="noopener noreferrer"
+                <a href="./assets/pages/about/about.html" target="_blank" rel="noopener noreferrer"
                   >About Us</a
                 >
               </li>
@@ -111,7 +145,7 @@
                 <a href="#" target="_blank" rel="noopener noreferrer">FAQ</a>
               </li>
               <li>
-                <a href="#" target="_blank" rel="noopener noreferrer"
+                <a href="./assets/pages/franchise/franchise.html" target="_blank" rel="noopener noreferrer"
                   >Franchise</a
                 >
               </li>

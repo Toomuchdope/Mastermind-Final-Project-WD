@@ -43,7 +43,7 @@ header {
         &>.header-logo {
             &>a {
                 &>img {
-                    width: 10vw;
+                    width: 12vw;
                     margin: 1rem;
                     padding-left: 15px;
                     cursor: pointer;
@@ -51,8 +51,28 @@ header {
             }
         }
 
-        &>.nav-container {
-            &>.nav-menu {
+        & > .nav-container {
+            display: flex;
+            align-items: center;
+
+            & > .nav-toggle {
+                display: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: var(--clr-secondary);
+            }
+
+            & > .nav-close {
+                display: none;
+                font-size: 2rem;
+                cursor: pointer;
+                color: var(--clr-secondary);
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+
+            & > .nav-menu {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -63,6 +83,8 @@ header {
 
                 &>li {
                     position: relative;
+                    margin: 0;
+                    padding: 0.5rem 0;
 
                     &>a {
                         text-decoration: none;
@@ -70,6 +92,8 @@ header {
                         font-weight: 500;
                         font-size: 1rem;
                         cursor: pointer;
+                        display: block;
+                        padding: 0.5rem 0;
 
                         &:hover {
                             color: var(--clr-tertiary);
@@ -109,10 +133,13 @@ footer {
         &>.container-content {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
 
             &>.footer-col {
                 width: 14vw;
                 padding: 0 15px;
+                margin-bottom: 20px;
+                text-align: left;
 
                 &>h4 {
                     font-size: 18px;
@@ -178,12 +205,13 @@ footer {
             &>.footer-logo {
                 width: 19vw;
                 padding: 0 15px;
+                text-align: left;
 
                 &>img {
                     padding-top: 2em;
-                    width: 16vw;
+                    width: 70%;
                     display: block;
-                    position: absolute;
+                    position: relative;
                 }
             }
         }
@@ -195,6 +223,95 @@ footer {
         justify-content: center;
         padding-top: 40px;
         opacity: 0.2;
+    }
+}
+
+
+/* Media Queries */
+@media (max-width: 767px) {
+    header {
+        .header-container {
+            .header-logo {
+                a {
+                    img {
+                        width: 40vw; 
+                    }
+                }
+            }
+
+            .nav-container {
+                flex-direction: column;
+                align-items: flex-end; 
+                width: 100%;
+
+                .nav-toggle {
+                    display: flex; 
+                }
+
+                .nav-close {
+                    display: none; 
+                }
+
+                .nav-menu {
+                    display: none; 
+                    flex-direction: column;
+                    width: 50%; 
+                    background: #131313;
+                    position: fixed;
+                    top: 0;
+                    right: -60%; 
+                    padding: 1rem 1rem;
+                    transition: right 0.3s ease;
+
+                    li {
+                        width: 100%;
+                        margin: 0; 
+                        padding: 1rem 0;
+
+                    }
+                }
+
+                .nav-menu.active {
+                    right: 0;
+                    display: flex;
+                }
+
+                .nav-menu.active + .nav-close {
+                    display: flex; 
+                }
+            }
+        }
+    }
+
+    footer {
+        &>.footer-container {
+            &>.container-content {
+                flex-direction: column;
+
+                &>.footer-col {
+                    width: 100%;
+                    text-align: center; 
+                    margin-bottom: 20px;
+
+                    &>h4::before {
+                        left: 50%; 
+                        transform: translateX(-50%);
+                    }
+                }
+
+                &>.footer-logo {
+                    width: 100%;
+                    text-align: center; 
+                    margin-bottom: 20px; 
+
+                    &>img {
+                        width: 70%;
+                        margin: auto;
+                        position: relative;
+                    }
+                }
+            }
+        }
     }
 }
 
