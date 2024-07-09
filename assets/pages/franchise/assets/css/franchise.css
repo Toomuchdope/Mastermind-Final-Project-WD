@@ -1,7 +1,7 @@
 :root {
     --clr-primary: #131313;
     --clr-secondary: #ffffff;
-    --clr-tertiary: #d3b34e;
+    --clr-tertiary: #f9ca6e;
     --clr-quaternary: #424242;
 }
 
@@ -76,7 +76,7 @@ header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                gap: 2rem;
+                gap: 0em;
                 list-style: none;
                 padding: 0;
                 margin: 0;
@@ -85,6 +85,7 @@ header {
                     position: relative;
                     margin: 0;
                     padding: 0.5rem 0;
+                    padding: 0 10px;
 
                     &>a {
                         text-decoration: none;

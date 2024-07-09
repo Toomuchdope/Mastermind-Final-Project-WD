@@ -1,7 +1,7 @@
 :root {
     --clr-primary: #131313;
     --clr-secondary: #ffffff;
-    --clr-tertiary: #d3b34e;
+    --clr-tertiary: #f9ca6e;
     --clr-quaternary: #424242;
 }
 
@@ -76,7 +76,7 @@ header {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                gap: 2rem;
+                gap: 0em;
                 list-style: none;
                 padding: 0;
                 margin: 0;
@@ -85,6 +85,7 @@ header {
                     position: relative;
                     margin: 0;
                     padding: 0.5rem 0;
+                    padding: 0 10px;
 
                     &>a {
                         text-decoration: none;
@@ -220,7 +221,6 @@ header {
     min-height: 30vh;
 
     & > div{
-
         margin: 20px;
 
         & > h1 {
@@ -232,7 +232,7 @@ header {
         }
 
         & > h3 {
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             font-weight: 400;
             text-align: center;
         }
@@ -287,7 +287,6 @@ footer {
                     color: var(--clr-secondary);
                     text-decoration: none;
                     font-weight: 300;
-                    color: #bbbbbb;
                     display: block;
                     transition: all 0.3s ease;
                 }
@@ -351,7 +350,7 @@ footer {
             .header-logo {
                 a {
                     img {
-                        width: 40vw; 
+                        width: 30vw; 
                     }
                 }
             }
@@ -366,25 +365,30 @@ footer {
                 }
 
                 .nav-close {
-                    display: none; 
+                    display: none;
+                    & > i {
+                        margin-right: 10px;
+                    }
                 }
 
                 .nav-menu {
                     display: none; 
                     flex-direction: column;
-                    width: 50%; 
+                    justify-content: center;
+                    width: 50%;
+                    height: 100%;
                     background: #131313;
                     position: fixed;
                     top: 0;
                     right: -60%; 
                     padding: 1rem 1rem;
+                    padding-bottom: 33em;
                     transition: right 0.3s ease;
 
                     li {
                         width: 100%;
                         margin: 0; 
-                        padding: 1rem 0;
-
+                        padding: 1rem 0;;
                     }
                 }
 
@@ -396,6 +400,20 @@ footer {
                 .nav-menu.active + .nav-close {
                     display: flex; 
                 }
+            }
+        }
+    }
+
+    .hero-container {
+        .hero-text {
+            padding: 30px;
+            h1 {
+                font-size: 3.3rem;
+                font-weight: 700; 
+            }
+
+            h6 {
+                font-size: 0.9rem; 
             }
         }
     }
