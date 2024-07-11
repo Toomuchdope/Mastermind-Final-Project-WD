@@ -374,15 +374,12 @@ footer {
                 .nav-menu {
                     display: none; 
                     flex-direction: column;
-                    justify-content: center;
-                    width: 50%;
-                    height: 100%;
+                    width: 50%; 
                     background: #131313;
                     position: fixed;
                     top: 0;
                     right: -60%; 
                     padding: 1rem 1rem;
-                    padding-bottom: 33em;
                     transition: right 0.3s ease;
 
                     li {

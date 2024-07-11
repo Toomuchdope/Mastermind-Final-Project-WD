@@ -296,6 +296,9 @@ footer {
 
                 .nav-close {
                     display: none; 
+                    & > i {
+                        margin-right: 10px;
+                    }
                 }
 
                 .nav-menu {
